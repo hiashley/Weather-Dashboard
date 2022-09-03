@@ -1,0 +1,21 @@
+#search-area {
+  padding: 20px;
+}
+#weather-area {
+  padding: 20px;
+}
+.float {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.city-btn:hover {
+  cursor: pointer;
+}
+#weekly-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+

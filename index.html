@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/3fff5cc072.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <title>Weather Dashboard</title>
+</head>
+<body>
+  <div class="row navbar text-bg-primary">
+    <h1 class="text-center">Weather Dashboard</h1>
+  </div>
+
+  <div class="row">
+
+    <div id="search-area" class="col-12 col-md-3">
+      <h4 class="text-center">Search for a City:</h4>
+      <form class="form-group input-group">
+        <input type="text" id="search-city" class="form-control" placeholder="Search City">           
+          <button id="search-city-btn" class="btn btn-primary" type="button" id="search-city-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>        
+      </form>
+      <div class="card">
+        <ul class="list-group list-group-flush" id="search-history-list">
+          <!-- list-group-items -->
+      </ul>
+      <button id="clear-history" class="btn btn-sm btn-secondary hide">Clear History</button>
+      </div>
+    </div>
+<!-- Weather container -->
+    <div id="weather-area" class="col-12 col-md-9 hide">
+      <div class="city-info row border rounded my-3 px-3 py-3">
+        <h2 id="current-city">City
+          <small id="current-date" class="text-muted">Date</small>
+        </h2>
+        <p class="mb-0">Temperature: <span id="current-temp"></span></p>
+        <p class="mb-0">Wind: <span id="current-wind"></span></p>
+        <p class="mb-0">Humidity: <span id="current-humidity"></span></p>
+        <p>UV index: <span id="uv-index"></span></p>
+      </div>
+<!-- Weekly Forecast -->
+      <div class="row my-3">
+        <h3>5 Day Forecast</h3>
+      </div>
+      <div id="weekly-forecast" class="row">
+        <div class="col-2 card">
+          <div class="card-body">
+            <h5 class="card-title">Date</h5>
+            <i class="fa fa-sun"></i>
+            <p class="card-text mb-0">Temp:</p>
+            <p class="card-text mb-0">Wind:</p>
+            <p class="card-text">Humidity:</p>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
